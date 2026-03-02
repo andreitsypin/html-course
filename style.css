@@ -1,28 +1,55 @@
-#paragraph{
-    background-color: darkblue;
-}
-
-div .text {
-    background-color: cadetblue;
-}
-
-.text{
-    background-color: chartreuse;
-}
-
-div p {
-    background-color: darkviolet;
-}
-
-p{
-    background-color: brown;
-}
-
 /* 
 тег - 1 
 класс - 10
 id - 100
 !important - 1000
 */
+body{
+    background-color: green ;
+}
+
+.heading{
+    color: white;
+}
+
+.title{
+    color: white;
+}
+
+.text{
+    border: 2px double rgb(10, 49, 8);
+    color: white;
+    font-size: 16px;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(58, 80, 23);
+    border: 2px double rgb(10, 49, 8);
+    /* border-left: 2px double rgb(10, 49, 8);
+    border-top: 3px solid gray;
+    border-right: 4px dashed yellow;
+    border-bottom: 5px dotted red; */
+    /* border-color: rgb(10, 49, 8);
+    border-width: 2px;
+    border-style: solid; */
+}
 
 
+table{
+    border:2px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(10, 49, 8);
+    color: wheat;
+}
+
+th{
+    border:2px solid black; 
+}
+td{
+    border:2px solid black;
+    padding: 10px;
+}
