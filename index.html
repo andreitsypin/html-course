@@ -7,80 +7,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="heading">Виды чая</h1>
-    <img src="images/12174334.png" alt="" />
-    <h3 class="title">Классический черный чай</h3>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates
-      saepe exercitationem magnam possimus et magni explicabo animi repellendus
-      consectetur, excepturi tenetur. Officiis voluptate animi, fugit quibusdam
-      assumenda non debitis sunt optio unde error eum, iure tempora natus enim!
-      Atque asperiores voluptatem harum tenetur nihil architecto velit illum
-      doloribus praesentium.
-    </p>
-    <a href="#" class="btn">Купить чай..</a>
-    <h3 class="title">Зеленый цейлонский чай</h3>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates
-      saepe exercitationem magnam possimus et magni explicabo animi repellendus
-      consectetur, excepturi tenetur. Officiis voluptate animi, fugit quibusdam
-      assumenda non debitis sunt optio unde error eum, iure tempora natus enim!
-      Atque asperiores voluptatem harum tenetur nihil architecto velit illum
-      doloribus praesentium.
-    </p>
-    <a href="#" class="btn">Купить чай..</a>
-    <h3 class="title">С бергамотом чай</h3>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates
-      saepe exercitationem magnam possimus et magni explicabo animi repellendus
-      consectetur, excepturi tenetur. Officiis voluptate animi, fugit quibusdam
-      assumenda non debitis sunt optio unde error eum, iure tempora natus enim!
-      Atque asperiores voluptatem harum tenetur nihil architecto velit illum
-      doloribus praesentium.
-    </p>
-    <a href="#" class="btn">Купить чай..</a>
+    <form action="/test">
+      <label for="text">Текст</label>
+      <input type="text" id="text" name="text" placeholder="введите текст" minlength="10" maxlength="20"/>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="passwd">Пароль</label>
+      <input type="password" id="passwd" name="passwd" />
+      <!-- <input type="date" name="" id="">
+        <input type="color" name="" id="">
+        <input type="number" name="" id=""> -->
+      <button type="submit">Кнопка</button>
+      <button type="reset">Сбросить</button>
+    </form>
     <br />
+    <!-- <form action="https://vkvideo.ru/">
+        <label for="search">Введите запрос для поиска</label>
+        <input type="text" name="q" id="search">
+        <button type="submit">Искать на вк видео</button>
+      </form> -->
 
-    <table>
-      <caption>
-        Заголовок таблицы
-      </caption>
-      <thead>
-        <tr>
-          
-          <th>Столбец 1</th>
-          <th>Столбец 2</th>
-          <th colspan="2">Столбец 3</th>
-          <!-- rowspan - объединяет строки -->
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1 ячейка в 1 столбце</td>
-          <td>1 ячейка в 2 столбце</td>
-          <td>1 ячейка в 3 столбце</td>
-          <td>1 ячейка в 4 столбце</td>
-        </tr>
-        <tr>
-          <td>2 ячейка в 1 столбце</td>
-          <td></td>
-          <td>2 ячейка в 3 столбце</td>
-          <td>2 ячейка в 4 столбце</td>
-        </tr>
-        <tr>
-          <td>3 ячейка в 1 столбце</td>
-          <td>3 ячейка в 2 столбце</td>
-          <td>3 ячейка в 3 столбце</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><a href="#" class="btn">Купить чай..</a></td>
-          <td><a href="#" class="btn">Купить чай..</a></td>
-          <td><a href="#" class="btn">Купить чай..</a></td>
-          <td><a href="#" class="btn">Купить чай..</a></td>
-        </tr>
-      </tbody>
-      <!-- <tfoot></tfoot> -->
-    </table>
+    <form action="/search">
+      <label for="agree">Согласен?</label>
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="all">Искать везде</label>
+      <input type="radio" name="search" id="all" value="all" />
+      <label for="vk">Искать на вквидео</label>
+      <input type="radio" name="search" id="vk" value="vk" />
+      <label for="topic">Тематика</label>
+      <select name="topic" id="topic">
+        <option value="1">Все</option>
+        <optgroup label="Популярное">
+          <option value="2">Животные</option>
+          <option value="3">Разработка</option>
+        </optgroup>
+                <optgroup label="Популярное">
+          <option value="2">Животные</option>
+          <option value="3">Разработка</option>
+        </optgroup>
+      </select>
+      <label for="vol">Громкость</label>
+      <input type="range" name="volume" id="vol" min="0" max="10" step="2">
+      <label for="grade">Оценка</label>
+      <input type="number" name="grade" id="grade" min="1" max="5">
+      <label for="komm">Комментарий</label>
+      <textarea name="komm" id="komm" placeholder="Введите текст" rows="10" cols="50"></textarea>
+      <button>Кнопка</button>
+    </form>
   </body>
 </html>
