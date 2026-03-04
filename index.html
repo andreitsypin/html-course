@@ -7,52 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="/test">
-      <label for="text">Текст</label>
-      <input type="text" id="text" name="text" placeholder="введите текст" minlength="10" maxlength="20"/>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" />
-      <label for="passwd">Пароль</label>
-      <input type="password" id="passwd" name="passwd" />
-      <!-- <input type="date" name="" id="">
-        <input type="color" name="" id="">
-        <input type="number" name="" id=""> -->
-      <button type="submit">Кнопка</button>
-      <button type="reset">Сбросить</button>
-    </form>
-    <br />
-    <!-- <form action="https://vkvideo.ru/">
-        <label for="search">Введите запрос для поиска</label>
-        <input type="text" name="q" id="search">
-        <button type="submit">Искать на вк видео</button>
-      </form> -->
-
-    <form action="/search">
-      <label for="agree">Согласен?</label>
-      <input type="checkbox" name="agree" id="agree" />
-      <label for="all">Искать везде</label>
-      <input type="radio" name="search" id="all" value="all" />
-      <label for="vk">Искать на вквидео</label>
-      <input type="radio" name="search" id="vk" value="vk" />
-      <label for="topic">Тематика</label>
-      <select name="topic" id="topic">
-        <option value="1">Все</option>
-        <optgroup label="Популярное">
-          <option value="2">Животные</option>
-          <option value="3">Разработка</option>
-        </optgroup>
-                <optgroup label="Популярное">
-          <option value="2">Животные</option>
-          <option value="3">Разработка</option>
-        </optgroup>
-      </select>
-      <label for="vol">Громкость</label>
-      <input type="range" name="volume" id="vol" min="0" max="10" step="2">
-      <label for="grade">Оценка</label>
-      <input type="number" name="grade" id="grade" min="1" max="5">
-      <label for="komm">Комментарий</label>
-      <textarea name="komm" id="komm" placeholder="Введите текст" rows="10" cols="50"></textarea>
-      <button>Кнопка</button>
-    </form>
+    <header>
+      <div class="nav">
+        <img src="https://avatars.mds.yandex.net/i?id=5e0ebf07b781e723630140bd6fda1e15_l-13604111-images-thumbs&n=13" alt="" width="64">
+        <ul>
+          <li><a href="">Программы</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Здесь вы найдете информациюо наших услугах и продуктах</p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Академия Цифра</p>
+    </footer>
   </body>
 </html>
