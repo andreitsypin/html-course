@@ -1,31 +1,50 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
-    background-color: rgb(67, 67, 67);
+  float: right;
+  margin: 0;
 }
 
-ul{
-    list-style: none;
-    float: right;
+.nav ul {
+  margin: 0;
 }
 
-ul li{
-    float: right;
-    padding: 10px 20px;
+ul li {
+  float: right;
+  padding: 0px 20px;
+  list-style: none;
 }
 
-
-a{
-    text-decoration: none;
-    font-size: 18px;
-    color: wheat;
+a {
+  text-decoration: none;
+  font-size: 18px;
 }
 
-h1{
-    border: 3px double green;
-    padding: 10px 20px 30px 40px;
-    margin: 10px 20px 30px 40px;
+.news {
+  width: 14%;
+  float: right;
+  margin: 5px 55px;
 }
+
+.news img {
+  width: 100%;
+}
+
+.main-news{
+  
+  float: left;
+  width: 50%;
+  margin-right: 60px;
+}
+
+.main-news h2{
+  font-size: 40px;
+}
+
+.main-news img{
+  width: 100%;
+}
+
