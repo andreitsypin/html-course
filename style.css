@@ -1,78 +1,285 @@
-.initial{
-  background-color: goldenrod;
-  height: 200px;
+body {
+  background-image: url("images_fruits/main-background.png");
+  margin: 0;
+  padding: 0;
 }
 
-.parent {
-  background-color: forestgreen;
-  height: 200px;
-  /* position: relative; */
+.header {
+  margin-top: 12px;
+  margin-inline-start: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.child_1 {
-  background-color: yellow;
-  /* position: relative; */
-  /* элемент можно спозиционировать относительно его исходной
-  позиции в потоке документа */
-  /* left: 200px;
-  top: 100px; */
-  /* position: absolute; */
-  /* left: 200px;
-  top: 100px; */
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+.burger{
+  position: relative;
 }
 
-.child_2 {
+.burger-button{
+  display: none;
+  width: 100%;
+    font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background-color: bisque;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+}
+
+.burger:hover .burger-button{
+  display: inline-block;
+}
+
+.burger-button li{
+  margin: 10px auto;
+}
+
+.burger-button a{
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  display: inline-block;
+  font-size: 30px;
+  margin-inline: 90px;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(62, 62, 62);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 50px;
+}
+
+.section-1 img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section-1 .fruits-content {
+  width: 40%;
+  text-align: center;
+  color: rgb(62, 62, 62);
+}
+.section-1 .fruits-content h3 {
+  margin-top: 60px;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-1 .fruits-content p {
+  margin: 30px 30px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-1 .fruits-content a {
+  display: inline-block;
+  margin: 30px 30px;
+  text-decoration: none;
+  background-color: rgb(253, 80, 80);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fruit {
+  width: 21%;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fruit img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.fruit h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.fruit p {
+  font-size: 24px;
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.granat {
+  background-color: rgb(101, 195, 101);
+}
+
+.ananas {
+  background-color: rgb(255, 134, 154);
+}
+
+.greipfruit {
+  background-color: rgb(42, 182, 124);
+}
+
+.mango {
+  background-color: rgb(178, 172, 54);
+}
+
+.section-3 {
+  text-align: center;
+  margin: 25vh 20vh 20vh 20vh;
+}
+
+.section-3 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(48, 176, 218);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-3 p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(254, 172, 99);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.fruit-dotted-conts {
+  width: 40%;
+  height: 19vh;
+  margin: 20px auto;
+  background-color: rgb(255, 233, 212);
+  border-radius: 15px;
+  display: flex;
+
+}
+
+.inside-dotted-cont {
+  display: flex;
+  width: 93%;
+  height: 85%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border: dashed rgb(71, 187, 71) 2px;
+  border-radius: 20px;
+  padding-inline: 10px;
+}
+
+.inside-dotted-cont img {
+  width: 20%;
+  margin-inline: 20px;
+}
+
+.dotted-cont-content {
+  width: 70%;
+}
+
+.dotted-cont-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(55, 55, 55);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dotted-cont-content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(55, 55, 55);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-4{
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.granade-bckg{
+  position: absolute;
+  top: 10px;
+}
+
+.mint{
+  position: absolute;
+  right: 0px;
+}
+.fruit-plate{
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+}
+
+
+#MainButton:hover {
+  background-color: brown;
+}
+
+#MainButton:active {
+  background-color: rgb(0, 0, 0);
+}
+
+#MainButton:focus::before {
+  background-color: green;
+  content: "!";
+}
+
+#text:focus{
   background-color: blue;
-  /* position: relative;
-  left: 200px;
-  top: 50px; */
-  /* position: absolute;
-  left: 200px;
-  top: 50px; */
-
-  width: 100px;
-  height: 100px;
-  margin: 10px;
 }
 
-.child_3 {
+/* #main:visited{
+  color: orange;
+} */
+
+.menu {
+  list-style: decimal;
+  
+}
+
+/* first-child    last-child */
+
+.menu li:nth-child(3n-1){
+  color: red;
+}
+
+#MainButton::after{
+  content: " ! ";
+}
+
+.fruits-content p::selection{
   background-color: red;
-  /* position: relative;
-  left: 200px;
-  top: 0px; */
-  /* position: absolute;
-  left: 200px;
-  top: 0px; */
-  width: 100px;
-  height: 100px;
-  margin: 10px;
 }
 
-
-.fixed{
-  width: 100px;
-  height: 100px;
-  background-color: black;
-
-  position: fixed;
-  top: 50%;
-  left: 25%;
+#text::placeholder{
+  color: blue;
+  font-size: 20px;
 }
 
-.container{
-  background-color: lightgreen;
-  height: 500px;
-}
-
-.sticky-block{
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  position: sticky;
-  top: 0;
-  left: 50%;
-  /* z-index: ; */
-}
