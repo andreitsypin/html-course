@@ -1,375 +1,107 @@
 body {
-  background-image: url("images_fruits/main-background.png");
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
-  margin-top: 12px;
-  margin-inline-start: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.burger {
-  position: relative;
-}
-
-.burger-button {
-  display: none;
-  width: 100%;
-  font-size: 30px;
-  position: absolute;
-  top: 40px;
-  left: 0px;
-  background-color: bisque;
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.burger:hover .burger-button {
-  display: inline-block;
-}
-
-.burger-button li {
-  margin: 10px auto;
-}
-
-.burger-button a {
-  text-decoration: none;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-}
-
-.menu-item {
-  display: inline-block;
-  font-size: 30px;
-  margin-inline: 90px;
-  text-decoration: none;
-  font-weight: 700;
-  color: rgb(62, 62, 62);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.section-1 {
-  display: flex;
-  justify-content: space-around;
-  margin-inline: 50px;
-}
-
-.section-1 img {
-  width: 50%;
+  width: 60%;
+  height: 80px;
   margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.section-1 .fruits-content {
-  width: 40%;
-  text-align: center;
-  color: rgb(62, 62, 62);
-}
-.section-1 .fruits-content h3 {
-  margin-top: 60px;
-  font-size: 24px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.header > img {
+  height: 22px;
 }
 
-.section-1 .fruits-content p {
-  margin: 30px 30px;
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.header ul {
+  display: flex;
+  list-style: none;
 }
 
-.section-1 .fruits-content a {
-  display: inline-block;
-  margin: 30px 30px;
+.header ul li {
+  margin-left: 60px;
+  display: flex;
+}
+
+.header ul li a {
   text-decoration: none;
-  background-color: rgb(253, 80, 80);
-  color: white;
-  padding: 15px 40px;
-  border-radius: 15px;
-  font-size: 28px;
-  font-weight: 100;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.section-2 {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.fruit {
-  width: 21%;
-  border-radius: 15px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fruit img {
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-.fruit h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.fruit p {
-  font-size: 24px;
-  margin: 0 auto;
-  width: 90%;
-  font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.granat {
-  background-color: rgb(101, 195, 101);
-}
-
-.ananas {
-  background-color: rgb(255, 134, 154);
-}
-
-.greipfruit {
-  background-color: rgb(42, 182, 124);
-}
-
-.mango {
-  background-color: rgb(178, 172, 54);
-}
-
-.section-3 {
-  text-align: center;
-  margin: 25vh 20vh 20vh 20vh;
-}
-
-.section-3 h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: rgb(48, 176, 218);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.section-3 p {
-  font-size: 24px;
-  font-weight: 500;
-  color: rgb(254, 172, 99);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.fruit-dotted-conts {
-  width: 40%;
-  height: 19vh;
-  margin: 20px auto;
-  background-color: rgb(255, 233, 212);
-  border-radius: 15px;
-  display: flex;
-}
-
-.inside-dotted-cont {
-  display: flex;
-  width: 93%;
-  height: 85%;
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  border: dashed rgb(71, 187, 71) 2px;
-  border-radius: 20px;
-  padding-inline: 10px;
-}
-
-.inside-dotted-cont img {
-  width: 20%;
-  margin-inline: 20px;
-}
-
-.dotted-cont-content {
-  width: 70%;
-}
-
-.dotted-cont-content h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: rgb(55, 55, 55);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.dotted-cont-content p {
-  font-size: 20px;
   font-weight: 400;
-  color: rgb(55, 55, 55);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.section-4 {
-  position: relative;
-  margin-bottom: 100px;
-}
-
-.granade-bckg {
-  position: absolute;
-  top: 10px;
-}
-
-.mint {
-  position: absolute;
-  right: 0px;
-}
-.fruit-plate {
-  position: absolute;
-  right: 50px;
-  bottom: 100px;
-}
-
-#MainButton:hover {
-  background-color: brown;
-  scale: 1.1;
-  filter: blur(10px) brightness(50%);
-}
-
-#MainButton:active {
-  background-color: rgb(0, 0, 0);
-}
-
-#MainButton:focus::before {
-  background-color: green;
-  content: "!";
-}
-
-#text:focus {
-  background-color: blue;
-}
-
-/* #main:visited{
-  color: orange;
-} */
-
-.menu {
-  list-style: decimal;
-}
-
-/* first-child    last-child */
-
-.menu li:nth-child(3n-1) {
-  color: red;
-}
-
-#MainButton::after {
-  content: " ! ";
-}
-
-.fruits-content p::selection {
-  background-color: red;
-}
-
-#text::placeholder {
-  color: blue;
   font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #4c5866;
 }
 
-.section-anim div {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  background-color: blue;
-  /* transition: padding-left 2s, transform 2s; */
-  transition: 2s;
-  /* animation-direction: ; */
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  /* animation: move1;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  
-  animation-delay: 1s;
-  animation-timing-function: ease-out; */
+.header ul li div {
+  width: 78px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.section-anim div:nth-child(1){
-  animation: move1 3s forwards;
+hr {
+  margin: 0;
+  border: 1% solid #4c5866;
 }
 
-.section-anim div:nth-child(2):hover{
-  background-color: aqua;
-  transform: rotateY(180deg);
-}
-/* 
-.section-anim div:nth-child(3):hover{
-  background-color: aqua;
-  padding-left: 400px;
-  transition-timing-function: ease-out;
-}
-.section-anim div:nth-child(4):hover{
-  background-color: aqua;
-  transition-timing-function:cubic-bezier(0.19, 1.48, 0.92, -0.5);
-  transform:translate(100px, 100px); */
-
-/* transform rotate, translate, scale */
-
-/* } */
-@keyframes move {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100px);
-  }
+.section1 {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: space-between;
 }
 
-@keyframes move1 {
-  0% {
-    transform: translate(0, 0) rotateZ(0deg);
-  }
-  25%{
-    transform: translate(100px, -50px) rotateZ(45deg);
-
-  }
-  50% {
-    transform: translate(200px, 0px) rotateZ(90deg);
-
-  }
-  75%{
-    transform: translate(300px, 50px) rotateZ(150deg);
-  }
-  100% {
-    transform: translate(400px, 0px) rotateZ(180deg);
-  }
+.section1 img {
+  width: 50%;
 }
 
-/* @media (max-width: 1000px) {
-  .menu{
-    display: block;
-  }
-  .fruit {
-    width: 85%;
-    margin: 20px;
-  } 
+.section1 .main-info {
+  width: 40%;
 }
 
+.main-info h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #4C5866;
+  margin-top: 60px;
+}
 
-@media (max-width: 425px) {
-  .menu{
-    display: block;
-  }
-  .fruit {
-    width: 50%;
-    margin: 20px auto;
-  } 
-} */
+.main-info p{
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #85859B;
+margin-block: 30px;
+}
+
+.main-info a{
+display: inline-block;
+border-width: 1px;
+top: 290px;
+padding-top: 22px;
+padding-right: 89px;
+padding-bottom: 22px;
+padding-left: 89px;
+border: 1px solid #7875FE;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+color: #7875FE;
+text-decoration: none;
+}
+
+.f{
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+.s{
+  width: 45%;
+}
