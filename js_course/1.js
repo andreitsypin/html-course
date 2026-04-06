@@ -182,74 +182,159 @@
 // console.log(b/0);
 
 
-let arr = [1,2,3,4,5,6,7];
-let arr1 = new Array(5);
+// let arr = [1,2,3,4,5,6,7];
+// let arr1 = new Array(5);
 
-console.log(arr1.toString());
-console.log(arr1[0]);
-console.log(arr[0]);
+// console.log(arr1.toString());
+// console.log(arr1[0]);
+// console.log(arr[0]);
 
-arr.push(4);
-console.log(arr.toString());
-arr.pop();
-console.log(arr.toString());
-arr.shift();
-console.log(arr.toString());
-arr.unshift(0);
-console.log(arr.toString());
+// arr.push(4);
+// console.log(arr.toString());
+// arr.pop();
+// console.log(arr.toString());
+// arr.shift();
+// console.log(arr.toString());
+// arr.unshift(0);
+// console.log(arr.toString());
 
-let a = arr.splice(1,2);
-console.log(a);
-console.log(arr.toString());
+// let a = arr.splice(1,2);
+// console.log(a);
+// console.log(arr.toString());
 
-let a1 = arr.splice(1, 0, 10);
-console.log(a1);
-console.log(arr.toString());
+// let a1 = arr.splice(1, 0, 10);
+// console.log(a1);
+// console.log(arr.toString());
 
-let a2 = arr.splice(1, 1, 10);
-console.log(a2);
-console.log(arr.toString());
+// let a2 = arr.splice(1, 1, 10);
+// console.log(a2);
+// console.log(arr.toString());
 
 
-let arr2 = arr.sort((a,b) => a - b);
-console.log(arr2);
+// let arr2 = arr.sort((a,b) => a - b);
+// console.log(arr2);
 
-console.log(arr2.reverse());
+// console.log(arr2.reverse());
 
-let arr3 = new Array(5).fill(0);
-console.log(arr3.toString());
+// let arr3 = new Array(5).fill(0);
+// console.log(arr3.toString());
 
-let arr4 = arr2.slice(1, 5);
-console.log(arr4);
+// let arr4 = arr2.slice(1, 5);
+// console.log(arr4);
 
-console.log(arr2.concat(arr4));
+// console.log(arr2.concat(arr4));
 
-let arr5 = arr4.map(x => x * 2);
-console.log(arr5);
-console.log(arr4);
+// let arr5 = arr4.map(x => x * 2);
+// console.log(arr5);
+// console.log(arr4);
 
-let arr6 = arr4.filter(x => x > 5);
-console.log(arr6);
+// let arr6 = arr4.filter(x => x > 5);
+// console.log(arr6);
 
-console.log(arr4.includes(4));
-console.log(arr4.indexOf(4));
-console.log(arr4.find(x => x < 5));
-console.log(arr4.findIndex(x => x < 5));
-console.log(arr4.some(x => x < 5));
-console.log(arr4.every(x => x < 5));
-console.log(arr4);
-arr4.forEach(x => console.log(x));
-console.log(arr4);
+// console.log(arr4.includes(4));
+// console.log(arr4.indexOf(4));
+// console.log(arr4.find(x => x < 5));
+// console.log(arr4.findIndex(x => x < 5));
+// console.log(arr4.some(x => x < 5));
+// console.log(arr4.every(x => x < 5));
+// console.log(arr4);
+// arr4.forEach(x => console.log(x));
+// console.log(arr4);
 
-console.log(arr4.join(" "));
+// console.log(arr4.join(" "));
 
-let v = "1,2,3,4,5".split(",");
+// let v = "1,2,3,4,5".split(",");
 
-console.log(arr4);
+// console.log(arr4);
 
-//reduce(acc, current, index, array) => {
-// return новое_значение_acc;}, начальное значение acc);
+// //reduce(acc, current, index, array) => {
+// // return новое_значение_acc;}, начальное значение acc);
 
-let sum = arr4.filter(x => x > 5).map(x => x * 2).reduce((acc, x) => {return x % 2 == 0 ? acc + 1: acc;}, 0);
-console.log(sum);
+// let sum = arr4.filter(x => x > 5).map(x => x * 2).reduce((acc, x) => {return x % 2 == 0 ? acc + 1: acc;}, 0);
+// console.log(sum);
 
+let s = "hello";
+let s1 = 'hello';
+console.log(s[1]);
+console.log(s.charAt(1));
+console.log(s.length);
+console.log("hello".includes("ell"));
+console.log('hello'.indexOf('l'));
+console.log('hello'.lastIndexOf('l'));
+console.log('hello'.startsWith('hel'));
+console.log('hello'.endsWith('llo'));
+console.log("hello".slice(-3,-1));
+console.log("hello".slice(1,3));
+console.log("hello".substring(1,4));
+console.log("hello world".replace("world", 'python'));
+console.log("a-b-c".replaceAll("-", '_'));
+console.log('Hello'.toLowerCase());
+console.log('Hello'.toUpperCase());
+console.log('     Hello     '.trim());
+console.log('     Hello     '.trimEnd());
+console.log('     Hello     '.trimStart());
+console.log("a,b,c".split(','));
+let a = 5;
+console.log(`a = ${a}`);
+console.log('a = ' + a);
+console.log('ha'.repeat(5));
+
+
+function foo(){
+    console.log("foo");
+}
+
+foo();
+
+
+const sum = function(a, b = 5){
+    let c = 5;
+    return a + b + c;
+}
+
+console.log(sum(5,2));
+
+const mul = (a, b) => { 
+    return a * b;
+};
+
+console.log(mul(5, 2));
+
+let arr = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+let arr2 = [
+    [9,8,7],
+    [6,5,4],
+    [3,2,1]
+]
+
+console.log(arr.reduce((sum, x) => {
+    return sum + x.reduce((total, y) => {return total + y;}, 0)
+}, 0));
+
+let res = arr.map((x, i) => { 
+    return x.map((y, j) =>  {return y + arr2[i][j];});
+});
+
+let num = 2;
+let res1 = arr.map((x, i) => { 
+    return x.map((y, j) =>  {return y * num;});
+});
+
+console.log(res);
+console.log(res1);
+//reduce(acc, x, i, arr)
+//map(x, i, arr)
+
+let array = [1,2,3,4,5,67,8,9,0];
+let max = -Infinity;
+let min = Infinity;
+array.forEach(x => {max = max < x ? x : max;
+    min = min > x? x : min;
+});
+console.log(min);
+console.log(max);
