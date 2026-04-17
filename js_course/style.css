@@ -1,0 +1,10 @@
+.my-class{
+    color: red;
+}
+
+.h1{
+    font-size: 45px;
+    font-weight: 100;
+    border: 2px solid red;
+    border-radius: 20px;
+}
